@@ -323,7 +323,7 @@ auth:
     rootcertbundle: /root/certs/auth.crt
 ```
 
-We configure the **Authentication mecanism** for the registry to be **Token based**  (```auth: token:```) with the [GitLab parameters](http://docs.gitlab.com/ce/administration/container_registry.html#configure-container-registry-under-its-own-domain) [needed](https://docs.docker.com/registry/configuration/#token) for this mecanism to work.
+We configure the **Authentication mecanism** for the registry to be **Token based**  (```auth: token:```) with the [GitLab parameters](https://gitlab.com/gitlab-org/gitlab-ce/blob/8-15-stable//app/services/auth/container_registry_authentication_service.rb#L20-24) [needed](https://docs.docker.com/registry/configuration/#token) for this mecanism to work.
 
 Among the settings there is:
 > **rootcertbundle**: The absolute path to the root certificate bundle. This bundle contains the public part of the certificates used to sign authentication tokens[^token-auth].
