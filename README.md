@@ -1,5 +1,6 @@
 Installing a Docker private registry for GitLab
 ===================
+*January 2017*
 
 This article provides detailed instructions to install a Docker Registry on your **GitLab from sources** setup.
 
@@ -287,6 +288,7 @@ $ cd docker-registry
  
  >- We generate a key pair for GitLab to **sign tokens** with the **private key** and for the Registry to **verify** those signatures with the **public key**.
  >- It does not matter if the certificate is **self-signed** here!
+ >- This RSA key pair is **unrelated** to the one you use for supporting TLS (https) on your registry domain.
 ```
 $ sudo openssl req -new -newkey rsa:4096 -subj "/CN=gitlab-issuer" -nodes -x509 -keyout auth.key -out auth.crt
 
