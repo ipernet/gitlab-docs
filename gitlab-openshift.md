@@ -229,7 +229,7 @@ As a **GitLab admin**, create a new Oauth Application at https://gitlab.example.
 
 Submit to get access to an **Application Id** and **secret** to use below.
 
-- **Now edit the OpenSHift Origin master config again:**
+- **Now edit the OpenShift Origin master config again:**
 
 > ```$ editor ./etc/master/master-config.yml```
 
@@ -286,7 +286,7 @@ Let's decide  here on `*.apps.openshift.example.com`
 
 - **Define a wildcard DNS** on `*.apps.openshift.example.com` to your server public IP `X.X.X.X`
 
-We run a `all in one` setup, so the master, console and the only node runs on the same machine.
+We run a `all in one` setup, so the master, console and the only node run on the same machine.
 
 
 - **Now edit the master config again:**
@@ -312,7 +312,7 @@ routingConfig:
 > - Use your own domain everywhere.
 > 
 ### Start OpenShift Origin
-- It's now time start your `all-in-one` OpenShift Origin cluster:
+- It's now time to start your `all-in-one` OpenShift Origin cluster:
 
 ```
     $ sudo openshift start \
@@ -326,7 +326,7 @@ routingConfig:
   - You should have **no TLS certificate issue**.
   - You should be **redirected to GitLab** at https://gitlab.example.com/users/sign_in
  
-- **Authorize OpenShift Origin** to use yout GitLab account.
+- **Authorize OpenShift Origin** to use your GitLab account.
   - You should now be redirected to https://openshift.example.com:8443/console/
 
 
@@ -422,7 +422,7 @@ The image `ipernet/openshift-deploy` adds [such authentication](https://gitlab.c
 
 It should be available at:
 
-- http://staging.apps.openshift.example.com:10080 (if custom ports used for router)
+- http://staging.apps.openshift.example.com:10080 (if custom ports are used for router)
 - http://staging.apps.openshift.example.com
 
 
