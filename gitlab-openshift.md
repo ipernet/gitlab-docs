@@ -69,7 +69,7 @@ Once rebooted, load the `overlay` kernel module:
 
 
 
-- Download the latest stable release of [OpenShit Origin](https://github.com/openshift/origin/releases):
+- Download the latest stable release of [OpenShift Origin](https://github.com/openshift/origin/releases):
 
 > ```$ sudo mkdir /usr/local/openshift-origin``` 
 >  
