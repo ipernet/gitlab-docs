@@ -198,8 +198,8 @@ oauthConfig:
   namedCertificates: null # remove this
   # At the end of the section, add:
   namedCertificates:
-    - certFile: openshift.example.com.crt
-      keyFile: openshift.example.com.key
+    - certFile: openshift.example.com.crt.pem
+      keyFile: openshift.example.com.key.pem
       names:
       - "openshift.example.com"
 
