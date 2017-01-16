@@ -308,19 +308,20 @@ routingConfig:
 ```
 
 **Notes:** 
-
 > - Use your own domain everywhere.
-> 
+
 ### Start OpenShift Origin
 - It's now time to start your `all-in-one` OpenShift Origin cluster:
 
 ```
     $ sudo openshift start \
     	--master-config=/usr/local/openshift-origin/etc/master/master-config.yaml \
-    	--node-config=/usr/local/openshift-origin/etc/node-rigel/node-config.yaml \
+    	--node-config=/usr/local/openshift-origin/etc/node-XXXX/node-config.yaml \
     	--loglevel=5
 ```
-  
+
+**Notes:** 
+> - Change the path to the correct node configuration folder.
 
 - **Open your browser and navigate to https://openshift.example.com:8443/**
   - You should have **no TLS certificate issue**.
