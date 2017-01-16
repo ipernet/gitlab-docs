@@ -97,7 +97,7 @@ A manual configuration of OpenShift is a tedious process, so we are going to gen
 
 - Generate the `master-config.yaml` file too:
 
-> ```$ ./bin/openshift start master --write-config=/usr/local/openshift-origin/etc/master
+> ```$ sudo openshift start master --write-config=/usr/local/openshift-origin/etc/master
 > Wrote master config to: usr/local/openshift-origin/etc/master```
 
 You now have a complete [all-in-one](https://docs.openshift.org/latest/getting_started/administrators.html#installation-methods) basic configuration in `/usr/local/openshift-origin/etc`.
