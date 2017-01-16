@@ -359,11 +359,11 @@ Let's create an OpenShift router that won't conflict with your existing software
 	>--service-account=/usr/local/openshift-origin/etc/master/openshift-router.kubeconfig \
 	>--service-account=router```
 >   
-> ```$ sudo -E ./bin/oc env dc/router \
+> ```$ sudo -E oc env dc/router \
 	> ROUTER_SERVICE_HTTP_PORT=10080 \
 	> ROUTER_SERVICE_HTTPS_PORT=10443```
 >   
-> ```$ sudo -E ./bin/oc scale dc/router --replicas=1```
+> ```$ sudo -E oc scale dc/router --replicas=1```
 
 **Notes: **
 > We assume here that port `10080` and `10443` are available on the host, change if needed.
