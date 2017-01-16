@@ -18,7 +18,7 @@ We indeed already have a documentation from installing [GitLab from sources](htt
 The setup will be done on Debian Jessie on a dedicated server, directly connected to the internet.
 
 ***Notes:***
-> You can use any the GNU/Linux distributions of your choice.
+> You can use the GNU/Linux distributions of your choice.
 
 **OpenShift Origin cluster:**
 
@@ -43,7 +43,7 @@ Running this image requires your Kernel to support the [Overlay file system](htt
 > $ uname -r
 > 3.16.0-4-amd64
 
-One way of [doing this](https://wiki.debian.org/HowToUpgradeKernel) on Debian Jessie is to add the Debian Testing repository and use a recent Kernel from there:
+One way of [doing this](https://wiki.debian.org/HowToUpgradeKernel) on Debian Jessie is to add the Jessie-backports repository and use a recent Kernel from there:
 
 > ```$ echo "deb http://httpredir.debian.org/debian jessie-backports main" >> /etc/apt/sources.list```
 
